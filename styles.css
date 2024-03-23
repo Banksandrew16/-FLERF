@@ -1,0 +1,314 @@
+/* Global styles */
+body {
+    background-color: #00bfff;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes up at least the viewport height */
+}
+
+/* Header styles */
+header {
+   
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    max-width: 1200px; /* Adjust the max-width as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 600; /* Bold font weight */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white on hover */
+}
+
+
+/* Center the header title */
+.header-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+    flex: 1; /* Fill remaining space */
+}
+
+
+.copy-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.copy-input {
+    width: auto; /* Let the input width adjust to the content */
+    text-align: center; /* Center the text within the input */
+    padding: 5px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add border for clarity */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+
+#snowfallCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Move canvas behind other content */
+}
+
+/* Adjust other styles as needed */
+.logo-list {
+    display: flex;
+    justify-content: center; /* Align items horizontally at the center */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-list li {
+    margin-right: 20px; /* Adjust spacing between logos */
+}
+
+.logo-list li:last-child {
+    margin-right: 0; /* Remove margin for the last logo */
+}
+
+
+.copy-input {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: inherit; /* Inherit font size from parent */
+    width: 80%; /* Adjust width as needed */
+}
+
+.copy-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: inherit; /* Inherit font size from parent */
+}
+
+.copy-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex: 1; /* Fill remaining space */
+}
+
+.logo {
+    max-width: 50%;
+    height: auto;
+}
+
+.logo-img {
+    max-width: 50px; /* Adjusted maximum width for logos */
+    height: auto;
+}
+
+#token-distribution {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add margin-bottom for space */
+    color: #fff;
+    font-size: 18px; /* Font size for tokenomics content */
+}
+
+/* Style for the meme images */
+.meme {
+    width: 100%; /* Make the images fill their container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make sure the images don't have any extra spacing */
+}
+
+/* Style for the gallery grid layout */
+.gallery {
+    display: grid; /* Use CSS grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    gap: 20px; /* Add some space between grid items */
+}
+
+.gallery-item {
+    /* Optional: You can add additional styles for each grid item */
+    border-radius: 5px; /* Add border radius to gallery items */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Style for the gallery item images */
+.gallery-item img {
+    width: 100%; /* Make the images fill their container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make sure the images don't have any extra spacing */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for gallery items */
+.gallery-item:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+#tokenomics {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 50px; /* Font size for tokenomics content */
+
+}
+#tokenomics h2 {
+    font-family: 'Hammersmith One', sans-serif; /* Use Hammersmith One font */
+}
+#token-distribution p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 80%; /* Adjust as needed */
+    margin: 20px auto; /* Center the box horizontally and add margin */
+}
+
+#about {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px; /* Font size for about content */
+}
+#about p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 80%; /* Adjust as needed */
+    margin: 20px auto; /* Center the box horizontally and add margin */
+}
+#roadmap {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px; /* Font size for roadmap content */
+}
+
+#team {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px; /* Font size for team content */
+}
+
+#faqs {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px; /* Font size for FAQs content */
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Center the box horizontally */
+}
+
+.faq-item h3 {
+    margin-bottom: 10px; /* Add space below the FAQ question */
+}
+
+.faq-item p {
+    margin: 0; /* Remove default margin for paragraphs */
+}
+
+
+#social-media {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add margin-bottom for space */
+    color: #fff;
+    font-size: 18px; /* Font size for social media links */
+}
+
+#social-media ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#social-media ul li {
+    margin-right: 20px;
+}
+
+#social-media ul li:last-child {
+    margin-right: 0; /* Remove right margin from the last li element */
+}
+
+#social-media ul li a {
+    display: inline-block; /* Ensure the anchor tags behave as blocks in the flex container */
+}
+
+footer {
+    
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
